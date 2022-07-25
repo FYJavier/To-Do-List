@@ -1,5 +1,5 @@
 //
-//  AddedItemView.swift
+//  AddItemView.swift
 //  To-Do List
 //
 //  Created by Yuna on 7/25/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddedItemView: View {
+struct AddItemView: View {
     @ObservedObject var toDoList: ToDoList
     @State private var priority = ""
     @State private var description = ""
@@ -40,8 +40,8 @@ struct AddedItemView: View {
     }
 }
 
-struct AddedItemView_Previews: PreviewProvider {
+struct AddItemView_Previews: PreviewProvider {
     static var previews: some View {
-        AddedItemView(toDoList: ToDoList())
+        AddItemView(toDoList: ToDoList())
     }
 }
